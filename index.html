@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siphe_Lwande</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CSS -->
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font Awesome CSS -->
+
 </head>
+
 <body>
 
     <header>
@@ -16,7 +19,7 @@
                 <img src="images.png" alt="">
             </div>
             <div class="navlinks">
-                <ul id="mebulist">
+                <ul id="menulist">
                     <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#rooms">rooms</a></li>
@@ -26,10 +29,25 @@
                     <li><i class="fa fa-search"></i></li>
                     <li><button class="primary-btn">BOOK NOW</button></li>
                 </ul>
-                <span class="fa fa-bars"></span>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
             </div>
         </div>
     </header>
-    
+
+
+
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "100vh";
+            } else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
+
 </html>
