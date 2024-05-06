@@ -302,3 +302,26 @@ button {
   height: 2px;
   border: none;
  }
+
+ /* ========ROOMS============= */
+ .rooms {
+  position: relative;
+ }
+
+ .rooms .text {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: none;
+  padding: 30px;
+ }
+
+ .rooms i {
+  font-size: 12px;
+  color: fbb234;
+  margin: 15px 0;
+  margin-right: 5px;
+ }
+
+ .rooms p {
+  margin: 20px 0;
+  opacity: 0.7;
+ }
