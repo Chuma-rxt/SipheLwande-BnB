@@ -294,3 +294,11 @@ button {
  .counter h1{
   font-size: 50px;
  }
+
+ .counter hr {
+  width: 50%;
+  margin: 10px auto;
+  background: #7fc142;
+  height: 2px;
+  border: none;
+ }
